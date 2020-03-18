@@ -2,7 +2,7 @@ require 'pry'
 
 class School
   
-  attr_accessible :roster, :name
+  attr_accessor :roster, :name
 
   def initialize(name)
     @name = name
@@ -17,7 +17,4 @@ class School
   end
  
 
- 
-
- 
 end
