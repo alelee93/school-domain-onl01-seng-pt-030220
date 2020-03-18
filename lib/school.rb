@@ -2,7 +2,7 @@ require 'pry'
 
 class School
   
-  attr_accessible :grade, :name
+  #attr_accessible :grade, :name
 
   def initialize(name)
     @name = name
