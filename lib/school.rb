@@ -9,7 +9,7 @@ class School
     @roster= {}
   end
   
-  def add_student=(name, grade)
+  def add_student(name, grade)
     
     #if self.roster include?(grade)
     self.roster[grade] = []
