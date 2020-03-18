@@ -16,9 +16,9 @@ class School
     self.roster[grade] << name 
   end
  
-# def roster=(roster)
-#   @roster = roster
-# end
+def roster=(roster)
+  @roster = roster
+end
  
  def roster
    @roster
