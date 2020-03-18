@@ -2,11 +2,11 @@ require 'pry'
 
 class School
   
-  #attr_accessible :grade, :name
+  attr_accessible :roster, :name
 
   def initialize(name)
     @name = name
-    self.roster= {}
+    @roster= {}
   end
   
   def add_student=(name, grade)
@@ -16,13 +16,7 @@ class School
     self.roster[grade] << name 
   end
  
-def roster=(roster)
-  @roster = roster
-end
- 
- def roster
-   @roster
- end
+
  
 
  
