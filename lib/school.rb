@@ -12,8 +12,9 @@ class School
     @grade = grade
     self.roster[@grade] = []
     
+    if self.roster include?(grade)
     self.roster[@grade] << @student
-    binding.pry
+    end
   end
   
  def add_student(student, grade)
