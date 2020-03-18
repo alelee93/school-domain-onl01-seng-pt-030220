@@ -11,7 +11,6 @@ class School
   
   def add_student(name, grade)
     
-    #if self.roster include?(grade)
     self.roster[grade] ||= []
     self.roster[grade] << name 
   end
