@@ -8,20 +8,15 @@ class School
   end
   
   def add_student=(student, grade)
-    @student = student
-    @grade = grade
     
     if self.roster include?(grade)
-    self.roster[@grade] = []
-    self.roster[@grade] << @student 
+    self.roster[grade] = []
+    self.roster[grade] << student 
   end
     
   end
   
- def add_student(student, grade)
-   @student
-   @grade
- end
+
  
 def roster=(roster)
   @roster = roster
